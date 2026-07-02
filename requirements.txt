@@ -9,6 +9,11 @@ pytest-metadata==3.1.1
 pandas>=2.3          # 2.3+ required for Python 3.14
 python-dateutil>=2.9
 
+# REST API contract suite (rest-api-contract-qa)
+requests>=2.32
+jsonschema>=4.23
+pytest-rerunfailures>=16.0   # live-tier flakiness absorption
+
 # The OrangeHRM Playwright suite has its own pinned file:
 #   pip install -r orangehrm-qa-project/requirements.txt
 #   playwright install chromium

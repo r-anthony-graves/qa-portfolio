@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qa-portfolio.local/schemas/booking_list.schema.json",
+  "title": "BookingList",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["bookings", "count"],
+  "properties": {
+    "bookings": {
+      "type": "array",
+      "items": { "$ref": "booking.schema.json" }
+    },
+    "count": { "type": "integer", "minimum": 0 }
+  }
+}

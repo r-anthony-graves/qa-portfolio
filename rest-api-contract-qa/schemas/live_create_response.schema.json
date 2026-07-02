@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qa-portfolio.local/schemas/live_create_response.schema.json",
+  "title": "RestfulBookerCreateResponse",
+  "description": "Contract of POST /booking's response envelope on the live Restful-Booker API.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["bookingid", "booking"],
+  "properties": {
+    "bookingid": { "type": "integer", "minimum": 1 },
+    "booking": { "$ref": "live_booking.schema.json" }
+  }
+}

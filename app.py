@@ -5,6 +5,7 @@ Run: python app.py   →   http://127.0.0.1:5000
 
 import json
 import subprocess
+import sys
 import time
 from pathlib import Path
 from flask import Flask, render_template, Response, stream_with_context, jsonify, send_file
@@ -103,6 +104,27 @@ PROJECTS: dict = {
             ],
         },
     },
+    "rest-api-contract-qa": {
+        "name": "REST API Contract Testing",
+        "description": "Two-tier API contract testing: offline against a self-hosted booking API with 3 seeded defects, plus a live tier against the public Restful-Booker API documenting its real-world contract defects.",
+        "icon": "webhook",
+        "tags": ["API", "Contract Testing", "REST", "Live API"],
+        "tech": ["pytest", "requests", "jsonschema", "flask"],
+        "accent": "#14b8a6",
+        "site_url": "https://restful-booker.herokuapp.com",
+        "tooltip": {
+            "rationale": "UI tests cannot see contract drift: an API that silently changes a field type, leaks PII in an error body, or answers a missing resource with HTTP 200 breaks every downstream consumer while the UI still looks fine. Schema-driven API tests catch these regressions at the integration boundary — proven offline on seeded defects, then applied to a live public API with real shared data.",
+            "validates": [
+                "CRUD roundtrips: create, read, update, delete with representation checks",
+                "JSON Schema (Draft 2020-12) contract compliance on every endpoint",
+                "Negative paths: missing fields, wrong types, malformed JSON, business rules",
+                "Bearer-token auth: issuance, rejection, tampering, generic 401 hygiene",
+                "HTTP idempotency semantics (PUT replayable, POST not, DELETE once)",
+                "Seeded defect detection: schema drift, PII-leaking error, soft 404",
+                "Live tier (Restful-Booker): CRUD on live data + 3 real contract defects documented",
+            ],
+        },
+    },
     "orangehrm-qa-project": {
         "name": "OrangeHRM E2E",
         "description": "Playwright end-to-end suite against the OrangeHRM live demo — login, PIM, leave, recruitment, and admin flows with screenshot evidence.",
@@ -155,8 +177,10 @@ def run_tests(project_id: str):
         yield f"data: {json.dumps({'type': 'status', 'status': 'running'})}\n\n"
 
         start = time.monotonic()
+        # sys.executable, not "python": suites must run under the same interpreter
+        # (and site-packages) as the dashboard, regardless of PATH.
         process = subprocess.Popen(
-            ["python", "-m", "pytest"],
+            [sys.executable, "-m", "pytest"],
             cwd=str(project_dir),
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qa-portfolio.local/schemas/token.schema.json",
+  "title": "TokenResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["token", "token_type", "expires_in"],
+  "properties": {
+    "token": { "type": "string", "pattern": "^[0-9a-f]{32}$" },
+    "token_type": { "const": "bearer" },
+    "expires_in": { "type": "integer", "exclusiveMinimum": 0 }
+  }
+}

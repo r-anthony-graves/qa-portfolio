@@ -1,0 +1,8 @@
+# Standalone install for this suite only — the repo root requirements.txt
+# already covers everything when using the portfolio dashboard.
+flask==3.1.0
+pytest==9.1.1
+pytest-html==4.2.0
+pytest-rerunfailures>=16.0   # absorbs transient flakiness on the live tier
+requests>=2.32
+jsonschema>=4.23

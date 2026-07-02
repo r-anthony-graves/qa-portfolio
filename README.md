@@ -1,7 +1,8 @@
 # QA Automation Portfolio
 
-Six automated test suites — spanning AI/LLM evaluation, ETL data validation, legal-domain
-business rules, financial reconciliation, and live-site UI automation — run and monitored
+Seven automated test suites — spanning AI/LLM evaluation, ETL data validation, legal-domain
+business rules, financial reconciliation, REST API contract testing, and live-site UI
+automation — run and monitored
 from a single Flask dashboard with live streaming test output. Each suite ships with
 formal ISTQB-aligned documentation (test plan, requirements specification, test case
 specification with traceability matrix, and test summary report).
@@ -18,6 +19,7 @@ specification with traceability matrix, and test summary report).
 | Test framework | pytest 9 · pytest-html reports · pytest-xdist (parallel) · pytest-rerunfailures |
 | UI automation | Playwright 1.60 (Chromium) via pytest-playwright |
 | Data validation | pandas · deterministic JSON/CSV fixtures |
+| API testing | requests · jsonschema (Draft 2020-12 contract validation) · self-hosted Flask API under test · live tier vs [Restful-Booker](https://restful-booker.herokuapp.com) |
 | Dashboard backend | Flask 3.1 · Server-Sent Events (live pytest streaming) · subprocess runner |
 | Dashboard frontend | Tailwind CSS · Lucide icons · vanilla JS (no build step) |
 | QA documentation | ISTQB / ISO-IEC-IEEE 29119-3 templates (Markdown) |
@@ -40,12 +42,14 @@ That's it if dependencies are already installed. First time here? Use the
 | [legal-ai-prompt-review-qa](legal-ai-prompt-review-qa/) | Domain LLM evaluation | 18 | Real case law (Palsgraf, Miranda, Alice Corp, GDPR Art. 17) plus a seeded fictitious case proving hallucination containment |
 | [legal-billing-qa](legal-billing-qa/) | Business rule validation | 19 | UTBMS codes, 2024 ABA rates, daily-hours limits, closed-matter enforcement, invoice reconciliation — 4 seeded defects, all detected |
 | [workday-financial-validation-qa](workday-financial-validation-qa/) | Financial reconciliation | 16 | Three-way payroll ⇄ HR ⇄ GL reconciliation with IRS 2024 rates; balanced ledger; terminated-employee control probe |
+| [rest-api-contract-qa](rest-api-contract-qa/) | REST API contract testing | 37 | Two tiers: offline — CRUD, JSON Schema contracts, negative paths, auth, idempotency against a self-hosted booking API with 3 seeded defects; live — the same patterns on the public Restful-Booker API, documenting its 3 real contract defects (skips cleanly offline) |
 | [orangehrm-qa-project](orangehrm-qa-project/) | E2E UI automation (Playwright) | 16 | Live OrangeHRM demo: auth (positive/negative/parametrized), navigation, logout, screenshot evidence capture |
 
 A deliberate theme across the suites: **seeded defects**. Test checks are only
 trustworthy if they can fail, so several datasets contain known bad records (a 25-hour
 time entry, a fabricated court case, a PII-echoing response, a terminated employee still
-in payroll) that the suites must positively detect.
+in payroll, an API error message that leaks a customer email) that the suites must
+positively detect.
 
 ## ISTQB Documentation
 
@@ -144,12 +148,13 @@ qa-portfolio/
 ├── templates/index.html             # Dashboard UI (Tailwind, Lucide, vanilla JS)
 ├── requirements.txt                 # Dashboard + data-driven suite dependencies
 ├── setup.ps1 / setup.sh             # One-shot setup & run scripts
-├── ISTQB/                           # Formal QA documentation (4 docs × 6 suites)
+├── ISTQB/                           # Formal QA documentation (4 docs × 7 suites)
 ├── ai-prompt-validation-qa/         # ── each suite: ──
 ├── etl-data-validation-qa/          #   data/       test data (JSON/CSV)
 ├── legal-ai-prompt-review-qa/       #   tests/      pytest test cases
 ├── legal-billing-qa/                #   artifacts/  pytest-html reports
 ├── workday-financial-validation-qa/ #   scripts/    (where applicable) data generators
+├── rest-api-contract-qa/            #   api/ + schemas/ — self-hosted API under test + JSON Schemas
 └── orangehrm-qa-project/            # Playwright E2E suite (own pinned requirements.txt)
 ```
 
@@ -172,4 +177,5 @@ qa-portfolio/
 | legal-ai-prompt-review-qa | ✅ 18/18 |
 | legal-billing-qa | ✅ 19/19 |
 | workday-financial-validation-qa | ✅ 16/16 |
+| rest-api-contract-qa | ✅ 37/37 (26 offline + 11 live vs Restful-Booker) |
 | orangehrm-qa-project | 🌐 run on demand against the live demo |

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qa-portfolio.local/schemas/health.schema.json",
+  "title": "HealthResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "service", "version", "time"],
+  "properties": {
+    "status": { "const": "ok" },
+    "service": { "const": "booking-api" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "time": { "type": "string", "minLength": 19 }
+  }
+}

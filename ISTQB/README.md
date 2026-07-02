@@ -1,6 +1,6 @@
 # ISTQB-Aligned QA Documentation
 
-Formal test documentation for the six automated test suites in this portfolio, structured
+Formal test documentation for the seven automated test suites in this portfolio, structured
 according to **ISTQB** terminology and the document templates of **ISO/IEC/IEEE 29119-3**
 (successor to IEEE 829).
 
@@ -22,6 +22,7 @@ according to **ISTQB** terminology and the document templates of **ISO/IEC/IEEE 
 | Legal AI Prompt Review | System testing — domain-specific AI evaluation | 18 | [legal-ai-prompt-review-qa/](legal-ai-prompt-review-qa/) |
 | Legal Billing Validation | System testing — business rule validation | 19 | [legal-billing-qa/](legal-billing-qa/) |
 | Workday Financial Validation | Integration testing — financial reconciliation | 16 | [workday-financial-validation-qa/](workday-financial-validation-qa/) |
+| REST API Contract Testing | Integration testing — API contract, negative, auth, idempotency (offline + live tiers) | 37 | [rest-api-contract-qa/](rest-api-contract-qa/) |
 | OrangeHRM UI Automation | System / acceptance testing — E2E UI (live site) | 16 | [orangehrm-qa-project/](orangehrm-qa-project/) |
 
 ## Conventions
@@ -30,8 +31,9 @@ according to **ISTQB** terminology and the document templates of **ISO/IEC/IEEE 
   the pytest docstrings of each suite, so the code itself is the source of truth.
 - **Test case IDs** — `TC-<SUITE>-nnn[x]` (e.g. `TC-LB-002b`). Sub-letters denote test cases
   derived from the same test condition.
-- **Test basis** — the data files under each suite's `data/` directory plus the stated business
-  rules (IRS 2024 rates, UTBMS codes, GDPR Art. 17, etc.).
+- **Test basis** — the data files under each suite's `data/` directory (for the API suite,
+  the `schemas/` contract files and the API implementation) plus the stated business
+  rules (IRS 2024 rates, UTBMS codes, GDPR Art. 17, RFC 9110 method semantics, etc.).
 - **Test design techniques** — primarily specification-based: equivalence partitioning,
   boundary value analysis, decision table testing, and use case testing (UI suite).
   Several suites also use **defect-based** testing via deliberately seeded defects
