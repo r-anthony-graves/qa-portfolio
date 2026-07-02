@@ -1,0 +1,14 @@
+# Dashboard
+flask==3.1.0
+
+# Data-driven test suites (AI, ETL, legal, financial)
+# Pins aligned with orangehrm-qa-project/requirements.txt where shared.
+pytest==9.1.1
+pytest-html==4.2.0
+pytest-metadata==3.1.1
+pandas>=2.3          # 2.3+ required for Python 3.14
+python-dateutil>=2.9
+
+# The OrangeHRM Playwright suite has its own pinned file:
+#   pip install -r orangehrm-qa-project/requirements.txt
+#   playwright install chromium

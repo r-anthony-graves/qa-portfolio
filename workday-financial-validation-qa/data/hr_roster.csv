@@ -1,0 +1,16 @@
+employee_id,first_name,last_name,department,cost_center,job_title,hire_date,termination_date,status,pay_type,manager_id
+EMP-001,James,Anderson,Corporate Law,CC-1001,Partner,2015-06-01,,Active,Salary,
+EMP-002,Sarah,Mitchell,Litigation,CC-1002,Senior Associate,2019-08-15,,Active,Salary,EMP-001
+EMP-003,David,Kim,M&A Advisory,CC-1003,Associate,2022-01-10,,Active,Salary,EMP-009
+EMP-004,Michelle,Torres,Operations,CC-2001,Office Manager,2018-03-20,,Active,Hourly,EMP-008
+EMP-005,Robert,Jackson,Corporate Law,CC-1001,Paralegal,2020-07-01,,Active,Hourly,EMP-001
+EMP-006,Priya,Sharma,Finance,CC-2002,Controller,2017-11-15,,Active,Salary,
+EMP-007,Carlos,Rivera,Litigation,CC-1002,Associate,2023-02-01,,Active,Salary,EMP-002
+EMP-008,Linda,Washington,HR,CC-2003,HR Director,2016-04-10,,Active,Salary,
+EMP-009,Thomas,Baker,M&A Advisory,CC-1003,Senior Associate,2020-09-01,,Active,Salary,EMP-001
+EMP-010,Angela,Foster,Operations,CC-2001,Receptionist,2021-06-15,2024-02-29,Terminated,Hourly,EMP-004
+EMP-011,Wei,Zhang,IT,CC-3001,Tech Manager,2021-09-15,,Active,Salary,
+EMP-012,Victoria,Harrington,Corporate Law,CC-1001,Managing Partner,2010-01-10,,Active,Salary,EMP-001
+EMP-013,Naomi,Clarke,Litigation,CC-1002,Legal Secretary,2022-11-01,,Active,Hourly,EMP-002
+EMP-014,Marcus,Okafor,Business Development,CC-1004,BD Manager,2023-05-15,,Active,Salary,
+EMP-015,Elena,Vasquez,Corporate Law,CC-1001,Tax Counsel,2021-03-01,,Active,Salary,EMP-001

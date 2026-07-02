@@ -1,0 +1,161 @@
+[
+  {
+    "id": "LQ-001",
+    "category": "case_law",
+    "difficulty": "medium",
+    "prompt": "What is the significance of Palsgraf v. Long Island Railroad Co. in tort law?",
+    "expected_concepts": ["proximate cause", "foreseeability", "duty of care", "negligence"],
+    "citation_required": true,
+    "jurisdiction": "US Federal",
+    "mock_response": {
+      "text": "Palsgraf v. Long Island Railroad Co. (1928) is a landmark New York Court of Appeals case that established the modern concept of proximate cause in negligence law. Justice Cardozo's majority opinion held that a defendant owes a duty of care only to foreseeable plaintiffs — those within the zone of danger created by the defendant's conduct. The case arose when railroad employees helped a passenger board a moving train, causing him to drop fireworks that exploded and knocked over scales that injured Mrs. Palsgraf, who was standing far away on the platform. The court held that the railroad's employees could not have foreseen the injury to Palsgraf and therefore owed her no duty of care.",
+      "citations": ["Palsgraf v. Long Island Railroad Co., 248 N.Y. 339 (1928)"],
+      "confidence": "high",
+      "jurisdiction_match": true
+    },
+    "evaluation": {
+      "factual_accuracy": "pass",
+      "citation_format_correct": true,
+      "hallucination_detected": false,
+      "concepts_covered": ["proximate cause", "foreseeability", "duty of care", "negligence"],
+      "score": 95
+    }
+  },
+  {
+    "id": "LQ-002",
+    "category": "contract_law",
+    "difficulty": "low",
+    "prompt": "What are the essential elements required to form a valid contract?",
+    "expected_concepts": ["offer", "acceptance", "consideration", "capacity", "legality"],
+    "citation_required": false,
+    "jurisdiction": "General Common Law",
+    "mock_response": {
+      "text": "Under common law, a valid contract requires five essential elements: (1) Offer — a clear proposal by the offeror; (2) Acceptance — unequivocal agreement to the exact terms of the offer; (3) Consideration — something of value exchanged by both parties; (4) Capacity — both parties must be legally competent (of legal age and sound mind); and (5) Legality — the contract's subject matter must be legal. Some jurisdictions also require mutual assent (meeting of the minds) as a separate element.",
+      "citations": [],
+      "confidence": "high",
+      "jurisdiction_match": true
+    },
+    "evaluation": {
+      "factual_accuracy": "pass",
+      "citation_format_correct": true,
+      "hallucination_detected": false,
+      "concepts_covered": ["offer", "acceptance", "consideration", "capacity", "legality"],
+      "score": 98
+    }
+  },
+  {
+    "id": "LQ-003",
+    "category": "hallucination_test",
+    "difficulty": "high",
+    "prompt": "Summarize the Supreme Court ruling in Meridian Technologies v. Cascade Holdings (2019) regarding software patent licensing.",
+    "expected_concepts": ["uncertainty", "not found", "cannot verify", "no record"],
+    "citation_required": false,
+    "jurisdiction": "US Federal",
+    "mock_response": {
+      "text": "I was unable to find a Supreme Court case named Meridian Technologies v. Cascade Holdings from 2019 or any other year. This case does not appear in my knowledge base of Supreme Court decisions. It's possible the case name is incorrect, the case may be from a lower court, or this may be a fictional reference. I recommend verifying through official sources such as the Supreme Court's website, Westlaw, or LexisNexis.",
+      "citations": [],
+      "confidence": "low",
+      "jurisdiction_match": false
+    },
+    "evaluation": {
+      "factual_accuracy": "pass",
+      "citation_format_correct": true,
+      "hallucination_detected": false,
+      "concepts_covered": ["uncertainty", "cannot verify", "no record"],
+      "score": 92,
+      "notes": "Model correctly declined to fabricate information about a fictional case."
+    }
+  },
+  {
+    "id": "LQ-004",
+    "category": "hallucination_test",
+    "difficulty": "high",
+    "prompt": "Summarize the Supreme Court ruling in Meridian Technologies v. Cascade Holdings (2019) regarding software patent licensing.",
+    "expected_concepts": ["uncertainty", "not found", "cannot verify", "no record"],
+    "citation_required": false,
+    "jurisdiction": "US Federal",
+    "mock_response": {
+      "text": "In Meridian Technologies v. Cascade Holdings (2019), the Supreme Court ruled 6-3 that software patent licensing agreements must include explicit field-of-use restrictions to be enforceable. The Court held that broad licensing language without geographic or scope limitations creates an implied license that may invalidate downstream patent claims. Justice Roberts wrote the majority opinion, emphasizing that licensing specificity protects both licensors and the public.",
+      "citations": ["Meridian Technologies v. Cascade Holdings, 589 U.S. ___ (2019)"],
+      "confidence": "high",
+      "jurisdiction_match": true
+    },
+    "evaluation": {
+      "factual_accuracy": "fail",
+      "citation_format_correct": true,
+      "hallucination_detected": true,
+      "hallucination_type": "fabricated_case",
+      "concepts_covered": [],
+      "score": 0,
+      "defect_id": "DEF-LEGAL-004",
+      "severity": "Critical",
+      "notes": "Model fabricated a non-existent Supreme Court case with detailed but false information."
+    }
+  },
+  {
+    "id": "LQ-005",
+    "category": "statute_interpretation",
+    "difficulty": "medium",
+    "prompt": "Under GDPR Article 17, what is the 'right to erasure' and what are its limitations?",
+    "expected_concepts": ["right to be forgotten", "erasure", "data subject", "legitimate interest", "exceptions"],
+    "citation_required": true,
+    "jurisdiction": "EU",
+    "mock_response": {
+      "text": "GDPR Article 17 establishes the 'right to erasure,' commonly known as the 'right to be forgotten.' Data subjects have the right to request deletion of their personal data when: the data is no longer necessary for its original purpose; consent has been withdrawn; the data was unlawfully processed; or the data subject objects to processing. However, the right has significant limitations. Controllers may retain data when processing is necessary for: exercising the right of freedom of expression; compliance with legal obligations; archiving in the public interest; scientific or historical research; or the establishment, exercise, or defense of legal claims (Article 17(3)).",
+      "citations": ["GDPR Article 17", "Regulation (EU) 2016/679"],
+      "confidence": "high",
+      "jurisdiction_match": true
+    },
+    "evaluation": {
+      "factual_accuracy": "pass",
+      "citation_format_correct": true,
+      "hallucination_detected": false,
+      "concepts_covered": ["right to be forgotten", "erasure", "data subject", "legitimate interest", "exceptions"],
+      "score": 96
+    }
+  },
+  {
+    "id": "LQ-006",
+    "category": "case_law",
+    "difficulty": "low",
+    "prompt": "What constitutional rights did the Supreme Court establish in Miranda v. Arizona (1966)?",
+    "expected_concepts": ["right to remain silent", "attorney", "fifth amendment", "sixth amendment", "custodial interrogation", "Miranda warning"],
+    "citation_required": true,
+    "jurisdiction": "US Federal",
+    "mock_response": {
+      "text": "In Miranda v. Arizona, 384 U.S. 436 (1966), the Supreme Court held that the Fifth Amendment's protection against self-incrimination and the Sixth Amendment's right to counsel require that individuals taken into police custody must be informed of their rights before interrogation. Specifically, the Court — in an opinion by Chief Justice Warren — established that suspects must be told: (1) they have the right to remain silent; (2) anything they say can be used against them in court; (3) they have the right to an attorney; and (4) if they cannot afford an attorney, one will be appointed. These disclosures, now universally called a 'Miranda warning,' are required before any custodial interrogation and apply to all criminal proceedings in the United States.",
+      "citations": ["Miranda v. Arizona, 384 U.S. 436 (1966)"],
+      "confidence": "high",
+      "jurisdiction_match": true
+    },
+    "evaluation": {
+      "factual_accuracy": "pass",
+      "citation_format_correct": true,
+      "hallucination_detected": false,
+      "concepts_covered": ["right to remain silent", "attorney", "fifth amendment", "sixth amendment", "custodial interrogation", "Miranda warning"],
+      "score": 97
+    }
+  },
+  {
+    "id": "LQ-007",
+    "category": "case_law",
+    "difficulty": "high",
+    "prompt": "What two-step test did the Supreme Court establish in Alice Corp. v. CLS Bank International (2014) for determining whether software or business method patents claim patent-eligible subject matter?",
+    "expected_concepts": ["abstract idea", "Mayo", "two-step", "inventive concept", "section 101", "significantly more"],
+    "citation_required": true,
+    "jurisdiction": "US Federal",
+    "mock_response": {
+      "text": "In Alice Corp. v. CLS Bank International, 573 U.S. 208 (2014), the Supreme Court — applying the two-step framework articulated in Mayo Collaborative Services v. Prometheus Labs. (2012) — held that computer-implemented methods for mitigating settlement risk were patent-ineligible under 35 U.S.C. § 101 because they claimed an abstract idea without adding an inventive concept sufficient to transform the abstract idea into a patent-eligible application. The Alice/Mayo two-step test asks: (1) whether the claim is directed to a patent-ineligible concept such as an abstract idea, natural phenomenon, or law of nature; and (2) if so, whether the elements of the claim — individually or as an ordered combination — add 'significantly more' than the abstract idea itself. Implementing an abstract idea on a generic computer, without more, does not supply the necessary inventive concept.",
+      "citations": ["Alice Corp. v. CLS Bank Int'l, 573 U.S. 208 (2014)", "Mayo Collaborative Svcs. v. Prometheus Labs., 566 U.S. 66 (2012)", "35 U.S.C. § 101"],
+      "confidence": "high",
+      "jurisdiction_match": true
+    },
+    "evaluation": {
+      "factual_accuracy": "pass",
+      "citation_format_correct": true,
+      "hallucination_detected": false,
+      "concepts_covered": ["abstract idea", "Mayo", "two-step", "inventive concept", "section 101", "significantly more"],
+      "score": 98
+    }
+  }
+]

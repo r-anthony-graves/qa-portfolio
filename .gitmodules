@@ -1,0 +1,3 @@
+[submodule "orangehrm-qa-project"]
+	path = orangehrm-qa-project
+	url = https://github.com/r-anthony-graves/orangehrm-qa-project.git

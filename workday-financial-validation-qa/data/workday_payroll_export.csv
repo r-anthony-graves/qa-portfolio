@@ -1,0 +1,16 @@
+employee_id,first_name,last_name,department,cost_center,job_title,pay_type,pay_rate,hours_worked,gross_pay,federal_tax,state_tax,ss_tax,medicare_tax,health_ins_deduction,retirement_401k,net_pay,pay_period,status
+EMP-001,James,Anderson,Corporate Law,CC-1001,Partner,Salary,15000.00,80.00,15000.00,3375.00,900.00,930.00,217.50,450.00,750.00,8377.50,2024-03-01/2024-03-15,Active
+EMP-002,Sarah,Mitchell,Litigation,CC-1002,Senior Associate,Salary,9500.00,80.00,9500.00,2137.50,570.00,589.00,137.75,450.00,475.00,5140.75,2024-03-01/2024-03-15,Active
+EMP-003,David,Kim,M&A Advisory,CC-1003,Associate,Salary,6800.00,80.00,6800.00,1530.00,408.00,421.60,98.60,450.00,340.00,3551.80,2024-03-01/2024-03-15,Active
+EMP-004,Michelle,Torres,Operations,CC-2001,Office Manager,Hourly,35.00,80.00,2800.00,630.00,168.00,173.60,40.60,450.00,140.00,1197.80,2024-03-01/2024-03-15,Active
+EMP-005,Robert,Jackson,Corporate Law,CC-1001,Paralegal,Hourly,28.00,80.00,2240.00,504.00,134.40,138.88,32.48,450.00,112.00,868.24,2024-03-01/2024-03-15,Active
+EMP-006,Priya,Sharma,Finance,CC-2002,Controller,Salary,8200.00,80.00,8200.00,1845.00,492.00,508.40,118.90,450.00,410.00,4375.70,2024-03-01/2024-03-15,Active
+EMP-007,Carlos,Rivera,Litigation,CC-1002,Associate,Salary,6500.00,80.00,6500.00,1462.50,390.00,403.00,94.25,450.00,325.00,3375.25,2024-03-01/2024-03-15,Active
+EMP-008,Linda,Washington,HR,CC-2003,HR Director,Salary,7800.00,80.00,7800.00,1755.00,468.00,483.60,113.10,450.00,390.00,4140.30,2024-03-01/2024-03-15,Active
+EMP-009,Thomas,Baker,M&A Advisory,CC-1003,Senior Associate,Salary,9200.00,80.00,9200.00,2070.00,552.00,570.40,133.40,450.00,460.00,4964.20,2024-03-01/2024-03-15,Active
+EMP-010,Angela,Foster,Operations,CC-2001,Receptionist,Hourly,22.00,80.00,1760.00,396.00,105.60,109.12,25.52,450.00,88.00,585.76,2024-03-01/2024-03-15,Terminated
+EMP-011,Wei,Zhang,IT,CC-3001,Tech Manager,Salary,6500.00,80.00,6500.00,1462.50,390.00,403.00,94.25,450.00,325.00,3375.25,2024-03-01/2024-03-15,Active
+EMP-012,Victoria,Harrington,Corporate Law,CC-1001,Managing Partner,Salary,22000.00,80.00,22000.00,4950.00,1320.00,1364.00,319.00,450.00,1100.00,12497.00,2024-03-01/2024-03-15,Active
+EMP-013,Naomi,Clarke,Litigation,CC-1002,Legal Secretary,Hourly,24.00,80.00,1920.00,432.00,115.20,119.04,27.84,450.00,96.00,679.92,2024-03-01/2024-03-15,Active
+EMP-014,Marcus,Okafor,Business Development,CC-1004,BD Manager,Salary,7800.00,80.00,7800.00,1755.00,468.00,483.60,113.10,450.00,390.00,4140.30,2024-03-01/2024-03-15,Active
+EMP-015,Elena,Vasquez,Corporate Law,CC-1001,Tax Counsel,Salary,11500.00,80.00,11500.00,2587.50,690.00,713.00,166.75,450.00,575.00,6317.75,2024-03-01/2024-03-15,Active

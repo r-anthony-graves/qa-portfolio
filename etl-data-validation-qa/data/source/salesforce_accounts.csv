@@ -1,0 +1,21 @@
+account_id,account_name,account_type,industry,annual_revenue,phone,billing_city,billing_state,billing_country,created_date,owner_id,status
+NW-ALFKI,Alfreds Futterkiste,Partner,Manufacturing,3175000.00,030-0074321,Berlin,,Germany,2023-01-17,OWN-301,Active
+NW-ANATR,Ana Trujillo Emparedados y helados,SMB,Food & Beverage,1050000.00,(5) 555-4729,Mexico D.F.,,Mexico,2023-02-02,OWN-302,Active
+NW-ANTON,Antonio Moreno Taqueria,SMB,Food & Beverage,1125000.00,(5) 555-3932,Mexico D.F.,,Mexico,2023-02-18,OWN-303,Active
+NW-AROUT,Around the Horn,Partner,Distribution,3400000.00,(171) 555-7788,London,UK,UK,2023-03-06,OWN-304,Active
+NW-BERGS,Berglunds snabbkop,Partner,Retail,3475000.00,0921-12 34 65,Lulea,,Sweden,2023-03-22,OWN-305,Active
+NW-BLAUS,Blauer See Delikatessen,Partner,Manufacturing,3550000.00,0621-08460,Mannheim,,Germany,2023-04-07,OWN-306,Active
+NW-BLONP,Blondesddsl pere et fils,Partner,Food & Beverage,3625000.00,88.60.15.31,Strasbourg,,France,2023-04-23,OWN-307,Active
+NW-BOLID,Bolido Comidas preparadas,SMB,Food & Beverage,1500000.00,(91) 555 22 82,Madrid,,Spain,2023-05-09,OWN-308,Active
+NW-BONAP,Bon app,SMB,Food & Beverage,1575000.00,91.24.45.40,Marseille,,France,2023-05-25,OWN-309,Active
+NW-BOTTM,Bottom-Dollar Markets,Enterprise,Retail,12250000.00,(604) 555-4729,Tsawassen,BC,Canada,2023-06-10,OWN-310,Active
+NW-BSBEV,B's Beverages,Partner,Distribution,3925000.00,(171) 555-1212,London,UK,UK,2023-06-26,OWN-311,Active
+NW-CACTU,Cactus Comidas para llevar,Partner,Food & Beverage,4000000.00,(1) 135-5555,Buenos Aires,,Argentina,2023-07-12,OWN-312,Active
+NW-CENTC,Centro comercial Moctezuma,Partner,Food & Beverage,4075000.00,(5) 555-3392,Mexico D.F.,,Mexico,2023-07-28,OWN-313,Active
+NW-CHOPS,Chop-suey Chinese,SMB,Food & Beverage,1950000.00,0452-076545,Bern,,Switzerland,2023-08-13,OWN-314,Active
+NW-COMMI,Comercio Mineiro,Partner,Distribution,4225000.00,(11) 555-7647,Sao Paulo,SP,Brazil,2023-08-29,OWN-315,Active
+NW-CONSH,Consolidated Holdings,Partner,Distribution,4300000.00,(171) 555-2282,London,UK,UK,2023-09-14,OWN-316,Active
+NW-DRACD,Drachenblut Delikatessen,Partner,Manufacturing,4375000.00,0241-039123,Aachen,,Germany,2023-09-30,OWN-317,Active
+NW-DUMON,Du monde entier,SMB,Food & Beverage,2250000.00,40.67.88.88,Nantes,,France,2023-10-16,OWN-318,Active
+NW-EASTC,Eastern Connection,Partner,Distribution,4525000.00,(171) 555-0297,London,UK,UK,2023-11-01,OWN-319,Active
+NW-ERNSH,Ernst Handel,Enterprise,Wholesale,13000000.00,7675-3425,Graz,,Austria,2023-11-17,OWN-320,Active

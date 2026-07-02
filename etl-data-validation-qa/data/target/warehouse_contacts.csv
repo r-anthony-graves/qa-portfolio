@@ -1,0 +1,21 @@
+contact_id,full_name,email_address,phone_number,account_id,job_title,department_name,lead_source_code,created_date,last_updated,contact_status,load_timestamp
+CON-NW-001,Maria Anders,m.anders@alfredsfutterk.com,030-0074321,NW-ALFKI,Sales Representative,Sales,WEB,2023-01-17,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-002,Ana Trujillo,a.trujillo@anatrujilloemp.com,(5) 555-4729,NW-ANATR,Owner,Operations,TRADE,2023-02-02,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-003,Antonio Moreno,a.moreno@antoniomorenot.com,(5) 555-3932,NW-ANTON,Owner,Operations,COLD,2023-02-18,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-004,Thomas Hardy,t.hardy@aroundthehorn.com,(171) 555-7788,NW-AROUT,Sales Representative,Sales,PARTNER,2023-03-06,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-005,Christina Berglund,c.berglund@berglundssnabb.com,0921-12 34 65,NW-BERGS,Order Administrator,Operations,REF,2023-03-22,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-006,Hanna Moos,h.moos@blauerseedelik.com,0621-08460,NW-BLAUS,Sales Representative,Sales,WEB,2023-04-07,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-007,Frederique Citeaux,f.citeaux@blondesddslper.com,88.60.15.31,NW-BLONP,Marketing Manager,Management,TRADE,2023-04-23,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-008,Martin Sommer,m.sommer@bolidocomidasp.com,(91) 555 22 82,NW-BOLID,Owner,Operations,COLD,2023-05-09,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-009,Laurence Lebihan,l.lebihan@bonapp.com,91.24.45.40,NW-BONAP,Owner,Operations,PARTNER,2023-05-25,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-010,Elizabeth Lincoln,e.lincoln@bottomdollarma.com,(604) 555-4729,NW-BOTTM,Accounting Manager,Management,REF,2023-06-10,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-011,Victoria Ashworth,v.ashworth@bsbeverages.com,(171) 555-1212,NW-BSBEV,Sales Representative,Sales,WEB,2023-06-26,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-012,Patricio Simpson,p.simpson@cactuscomidasp.com,(1) 135-5555,NW-CACTU,Sales Agent,Sales,TRADE,2023-07-12,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-013,Francisco Chang,f.chang@centrocomercia.com,(5) 555-3392,NW-CENTC,Marketing Manager,Management,COLD,2023-07-28,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-014,Yang Wang,y.wang@chopsueychines.com,0452-076545,NW-CHOPS,Owner,Operations,PARTNER,2023-08-13,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-015,Pedro Afonso,p.afonso@comerciomineir.com,(11) 555-7647,NW-COMMI,Sales Associate,Sales,REF,2023-08-29,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-016,Elizabeth Brown,e.brown@consolidatedho.com,(171) 555-2282,NW-CONSH,Sales Representative,Sales,WEB,2023-09-14,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-017,Sven Ottlieb,s.ottlieb@drachenblutdel.com,0241-039123,NW-DRACD,Order Administrator,Operations,TRADE,2023-09-30,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-018,Janine Labrune,j.labrune@dumondeentier.com,40.67.88.88,NW-DUMON,Owner,Operations,COLD,2023-10-16,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-019,Ann Devon,a.devon@easternconnect.com,(171) 555-0297,NW-EASTC,Sales Agent,Sales,PARTNER,2023-11-01,2024-05-20,Active,2024-06-01 08:00:00
+CON-NW-020,Roland Mendel,r.mendel@ernsthandel.com,7675-3425,NW-ERNSH,Sales Manager,Sales,REF,2023-11-17,2024-05-20,Active,2024-06-01 08:00:00

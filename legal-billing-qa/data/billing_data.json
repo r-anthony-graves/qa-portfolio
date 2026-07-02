@@ -1,0 +1,37 @@
+{
+  "timekeepers": [
+    {"id": "TK-001", "name": "Alexandra Reeves", "title": "Partner", "bar_number": "NY-12345", "hourly_rate": 650.00, "utbms_code": "L160"},
+    {"id": "TK-002", "name": "Marcus Williams", "title": "Senior Associate", "bar_number": "NY-67890", "hourly_rate": 425.00, "utbms_code": "L140"},
+    {"id": "TK-003", "name": "Priya Nair", "title": "Associate", "bar_number": "NY-11111", "hourly_rate": 310.00, "utbms_code": "L130"},
+    {"id": "TK-004", "name": "Daniel Cho", "title": "Paralegal", "bar_number": null, "hourly_rate": 185.00, "utbms_code": "L120"},
+    {"id": "TK-005", "name": "Rachel Torres",    "title": "Partner",          "bar_number": "CA-22222", "hourly_rate": 700.00, "utbms_code": "L160"},
+    {"id": "TK-006", "name": "Patricia Okonkwo",  "title": "Counsel",           "bar_number": "NY-44444", "hourly_rate": 550.00, "utbms_code": "L140"},
+    {"id": "TK-007", "name": "Jordan Miles",      "title": "Summer Associate",   "bar_number": null,       "hourly_rate": 225.00, "utbms_code": "L120"}
+  ],
+  "matters": [
+    {"matter_id": "MAT-001", "client_id": "CLI-100", "client_name": "Harrington Corp", "matter_type": "Litigation", "billing_type": "Hourly", "status": "Active"},
+    {"matter_id": "MAT-002", "client_id": "CLI-101", "client_name": "Sterling Capital", "matter_type": "M&A", "billing_type": "Hourly", "status": "Active"},
+    {"matter_id": "MAT-003", "client_id": "CLI-102", "client_name": "Meridian Health", "matter_type": "Regulatory", "billing_type": "Flat Fee", "status": "Active"},
+    {"matter_id": "MAT-004", "client_id": "CLI-103", "client_name": "Atlas Corp",              "matter_type": "Contract Review",         "billing_type": "Hourly", "status": "Closed"},
+    {"matter_id": "MAT-005", "client_id": "CLI-104", "client_name": "Nexus Data Systems",     "matter_type": "IPO & Securities Offering","billing_type": "Hourly", "status": "Active"},
+    {"matter_id": "MAT-006", "client_id": "CLI-105", "client_name": "Meridian Health",        "matter_type": "Employment Discrimination","billing_type": "Hourly", "status": "Active"}
+  ],
+  "time_entries": [
+    {"entry_id": "TE-001", "timekeeper_id": "TK-001", "matter_id": "MAT-001", "date": "2024-03-01", "hours": 2.5, "description": "Research and draft motion for summary judgment", "utbms_task_code": "L240", "utbms_activity_code": "A102", "status": "Submitted"},
+    {"entry_id": "TE-002", "timekeeper_id": "TK-002", "matter_id": "MAT-001", "date": "2024-03-01", "hours": 1.0, "description": "Review deposition transcripts", "utbms_task_code": "L330", "utbms_activity_code": "A104", "status": "Submitted"},
+    {"entry_id": "TE-003", "timekeeper_id": "TK-003", "matter_id": "MAT-002", "date": "2024-03-02", "hours": 3.5, "description": "Due diligence document review", "utbms_task_code": "L120", "utbms_activity_code": "A104", "status": "Submitted"},
+    {"entry_id": "TE-004", "timekeeper_id": "TK-004", "matter_id": "MAT-001", "date": "2024-03-02", "hours": 4.0, "description": "File organization and bates stamping", "utbms_task_code": "L110", "utbms_activity_code": "A111", "status": "Submitted"},
+    {"entry_id": "TE-005", "timekeeper_id": "TK-001", "matter_id": "MAT-002", "date": "2024-03-03", "hours": 0.5, "description": "Client call re: acquisition timeline", "utbms_task_code": "L120", "utbms_activity_code": "A106", "status": "Submitted"},
+    {"entry_id": "TE-006", "timekeeper_id": "TK-002", "matter_id": "MAT-001", "date": "2024-03-04", "hours": 25.0, "description": "Extensive research session", "utbms_task_code": "L240", "utbms_activity_code": "A102", "status": "Submitted", "defect": "EXCEEDS_DAILY_MAX"},
+    {"entry_id": "TE-007", "timekeeper_id": "TK-003", "matter_id": "MAT-004", "date": "2024-03-04", "hours": 2.0, "description": "Contract amendment review", "utbms_task_code": "L120", "utbms_activity_code": "A104", "status": "Submitted", "defect": "CLOSED_MATTER"},
+    {"entry_id": "TE-008", "timekeeper_id": "TK-005", "matter_id": "MAT-003", "date": "2024-03-05", "hours": 1.3, "description": "FDA compliance review call", "utbms_task_code": "L250", "utbms_activity_code": "A106", "status": "Submitted"},
+    {"entry_id": "TE-009", "timekeeper_id": "TK-001", "matter_id": "MAT-001", "date": "2024-03-05", "hours": 0.1, "description": "Quick email response to client", "utbms_task_code": "L190", "utbms_activity_code": "A107", "status": "Submitted"},
+    {"entry_id": "TE-010", "timekeeper_id": "TK-002", "matter_id": "MAT-002", "date": "2024-03-06", "hours": 0.0,  "description": "Zero-hour entry placeholder",                             "utbms_task_code": "L120", "utbms_activity_code": "A102", "status": "Submitted", "defect": "ZERO_HOURS"},
+    {"entry_id": "TE-011", "timekeeper_id": "TK-006", "matter_id": "MAT-005", "date": "2024-03-07", "hours": 3.5,  "description": "Securities offering documentation review — Schedule S-1 draft","utbms_task_code": "L120", "utbms_activity_code": "A104", "status": "Submitted"},
+    {"entry_id": "TE-012", "timekeeper_id": "TK-001", "matter_id": "MAT-005", "date": "2024-03-07", "hours": 0.5,  "description": "Call with CFO re: IPO timeline and SEC comment letter strategy",  "utbms_task_code": "L120", "utbms_activity_code": "A106", "status": "Submitted"},
+    {"entry_id": "TE-013", "timekeeper_id": "TK-002", "matter_id": "MAT-006", "date": "2024-03-08", "hours": 2.0,  "description": "Research Title VII and EEOC charge filing precedents",            "utbms_task_code": "L210", "utbms_activity_code": "A102", "status": "Submitted"},
+    {"entry_id": "TE-014", "timekeeper_id": "TK-003", "matter_id": "MAT-006", "date": "2024-03-08", "hours": 1.0,  "description": "Review EEOC charge and supporting documentary evidence",        "utbms_task_code": "L210", "utbms_activity_code": "A104", "status": "Submitted"},
+    {"entry_id": "TE-015", "timekeeper_id": "TK-007", "matter_id": "MAT-005", "date": "2024-03-09", "hours": 1.5,  "description": "Research SEC Rule 144A private placement exemption requirements",  "utbms_task_code": "L120", "utbms_activity_code": "A102", "status": "Submitted"},
+    {"entry_id": "TE-016", "timekeeper_id": "TK-005", "matter_id": "MAT-003", "date": "2024-03-09", "hours": 0.05, "description": "Brief FDA counsel callback — below minimum billing increment",      "utbms_task_code": "L250", "utbms_activity_code": "A106", "status": "Submitted", "defect": "BELOW_MIN_INCREMENT"}
+  ]
+}

@@ -1,0 +1,23 @@
+gl_entry_id,account_code,account_name,cost_center,debit_amount,credit_amount,description,pay_period,employee_id,entry_type,posting_date
+GL-001,5010,Salaries & Wages Expense,CC-1001,15000.00,0.00,Partner compensation - Anderson,2024-03-01/2024-03-15,EMP-001,Gross Pay,2024-03-15
+GL-002,5010,Salaries & Wages Expense,CC-1002,9500.00,0.00,Senior Associate compensation - Mitchell,2024-03-01/2024-03-15,EMP-002,Gross Pay,2024-03-15
+GL-003,5010,Salaries & Wages Expense,CC-1003,6800.00,0.00,Associate compensation - Kim,2024-03-01/2024-03-15,EMP-003,Gross Pay,2024-03-15
+GL-004,5020,Hourly Wages Expense,CC-2001,2800.00,0.00,Office Manager wages - Torres,2024-03-01/2024-03-15,EMP-004,Gross Pay,2024-03-15
+GL-005,5020,Hourly Wages Expense,CC-1001,2240.00,0.00,Paralegal wages - Jackson,2024-03-01/2024-03-15,EMP-005,Gross Pay,2024-03-15
+GL-006,5010,Salaries & Wages Expense,CC-2002,8200.00,0.00,Controller compensation - Sharma,2024-03-01/2024-03-15,EMP-006,Gross Pay,2024-03-15
+GL-007,5010,Salaries & Wages Expense,CC-1002,6500.00,0.00,Associate compensation - Rivera,2024-03-01/2024-03-15,EMP-007,Gross Pay,2024-03-15
+GL-008,5010,Salaries & Wages Expense,CC-2003,7800.00,0.00,HR Director compensation - Washington,2024-03-01/2024-03-15,EMP-008,Gross Pay,2024-03-15
+GL-009,5010,Salaries & Wages Expense,CC-1003,9200.00,0.00,Senior Associate compensation - Baker,2024-03-01/2024-03-15,EMP-009,Gross Pay,2024-03-15
+GL-010,5020,Hourly Wages Expense,CC-2001,1760.00,0.00,Receptionist wages - Foster,2024-03-01/2024-03-15,EMP-010,Gross Pay,2024-03-15
+GL-011,2010,Federal Tax Payable,ALL,0.00,26892.00,Federal tax withholding payable,2024-03-01/2024-03-15,,Tax Liability,2024-03-15
+GL-012,2020,State Tax Payable,ALL,0.00,7171.20,State tax withholding payable,2024-03-01/2024-03-15,,Tax Liability,2024-03-15
+GL-013,2030,SS Tax Payable,ALL,0.00,7410.24,Social security tax payable,2024-03-01/2024-03-15,,Tax Liability,2024-03-15
+GL-014,2040,Medicare Tax Payable,ALL,0.00,1733.04,Medicare tax payable,2024-03-01/2024-03-15,,Tax Liability,2024-03-15
+GL-015,2050,Benefits Payable,ALL,0.00,6750.00,Health insurance premium payable,2024-03-01/2024-03-15,,Benefits,2024-03-15
+GL-016,2060,401k Payable,ALL,0.00,5976.00,401k contribution payable,2024-03-01/2024-03-15,,Benefits,2024-03-15
+GL-017,2100,Accrued Payroll Payable,ALL,0.00,63587.52,Net pay payable to employees,2024-03-01/2024-03-15,,Net Pay,2024-03-15
+GL-018,5010,Salaries & Wages Expense,CC-3001,6500.00,0.00,Tech Manager compensation - Zhang,2024-03-01/2024-03-15,EMP-011,Gross Pay,2024-03-15
+GL-019,5010,Salaries & Wages Expense,CC-1001,22000.00,0.00,Managing Partner compensation - Harrington,2024-03-01/2024-03-15,EMP-012,Gross Pay,2024-03-15
+GL-020,5020,Hourly Wages Expense,CC-1002,1920.00,0.00,Legal Secretary wages - Clarke,2024-03-01/2024-03-15,EMP-013,Gross Pay,2024-03-15
+GL-021,5010,Salaries & Wages Expense,CC-1004,7800.00,0.00,BD Manager compensation - Okafor,2024-03-01/2024-03-15,EMP-014,Gross Pay,2024-03-15
+GL-022,5010,Salaries & Wages Expense,CC-1001,11500.00,0.00,Tax Counsel compensation - Vasquez,2024-03-01/2024-03-15,EMP-015,Gross Pay,2024-03-15
