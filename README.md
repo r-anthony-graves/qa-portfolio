@@ -61,8 +61,17 @@ so the code is the source of truth.
 
 ## Quick Start
 
-Requires **Python 3.12+** (developed on 3.14). One command sets everything up — virtual
-environment, all dependencies, Playwright browser — and starts the dashboard:
+Requires **Python 3.12+** (developed on 3.14). Clone with the submodule so the OrangeHRM
+suite comes along:
+
+```bash
+git clone --recurse-submodules https://github.com/r-anthony-graves/qa-portfolio.git
+cd qa-portfolio
+# already cloned without it? run: git submodule update --init
+```
+
+Then one command sets everything up — virtual environment, all dependencies, Playwright
+browser — and starts the dashboard:
 
 **Windows (PowerShell)**
 
@@ -143,6 +152,16 @@ qa-portfolio/
 ├── workday-financial-validation-qa/ #   scripts/    (where applicable) data generators
 └── orangehrm-qa-project/            # Playwright E2E suite (own pinned requirements.txt)
 ```
+
+## Repository Notes
+
+- **Submodule:** [orangehrm-qa-project](https://github.com/r-anthony-graves/orangehrm-qa-project)
+  is maintained as its own repository and included here as a git submodule, pinned to a
+  verified commit — one source of truth, no duplicated code. If its folder is empty after
+  cloning, run `git submodule update --init`.
+- **Generated output is not committed:** `.gitignore` excludes `.venv/`, `artifacts/`
+  (pytest-html reports), `__pycache__/`, `.pytest_cache/`, and `.env`. Reports regenerate
+  on every test run, locally or from the dashboard.
 
 ## Test Status
 
